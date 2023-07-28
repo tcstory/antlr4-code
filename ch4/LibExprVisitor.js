@@ -36,13 +36,7 @@ export default class LibExprVisitor extends antlr4.tree.ParseTreeVisitor {
 	}
 
 
-	// Visit a parse tree produced by LibExprParser#MulDiv.
-	visitMulDiv(ctx) {
-	  return this.visitChildren(ctx);
-	}
-
-
-	// Visit a parse tree produced by LibExprParser#AddSub.
+	// Visit a parse tree produced by LibExprParser#addSub.
 	visitAddSub(ctx) {
 	  return this.visitChildren(ctx);
 	}
@@ -56,6 +50,12 @@ export default class LibExprVisitor extends antlr4.tree.ParseTreeVisitor {
 
 	// Visit a parse tree produced by LibExprParser#int.
 	visitInt(ctx) {
+	  return this.visitChildren(ctx);
+	}
+
+
+	// Visit a parse tree produced by LibExprParser#mulDiv.
+	visitMulDiv(ctx) {
 	  return this.visitChildren(ctx);
 	}
 

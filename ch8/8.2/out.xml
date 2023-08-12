@@ -1,0 +1,16 @@
+<out>
+    <description>An imaginary server config file</description>
+    <logs>
+        <level>verbose</level>
+        <dir>/var/log</dir>
+    </logs>
+    <host>antlr.org</host>
+    <admin>
+        <element>parrt</element>
+        <element>tombu</element>
+    </admin>
+    <emptyObj></emptyObj>
+    <aliases></aliases>
+    <age>99</age>
+    <showLog>true</showLog>
+</out>
